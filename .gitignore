@@ -1,0 +1,53 @@
+# QuietReach .gitignore
+
+# ── Secrets — never commit these ────────────────────────────────────────────
+.env
+
+# ── Trained models — too large for git, regenerate with model/trainer.py ───
+model/saved/*.tflite
+model/saved/*.pkl
+
+# Datasets — too large for git, download separately
+data/
+
+
+
+# ── Test audio — sourced from ESC-50, not redistributed ────────────────────
+tests/sample_audio/*.wav
+tests/sample_audio/*.mp3
+tests/sample_audio/*.ogg
+
+# ── Python ──────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+pip-wheel-metadata/
+
+# ── Virtual environments ─────────────────────────────────────────────────────
+venv/
+.venv/
+env/
+ENV/
+
+# ── IDE ──────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ── Logs ─────────────────────────────────────────────────────────────────────
+*.log
+
+# ── Coverage ──────────────────────────────────────────────────────────────────
+.coverage
+htmlcov/
+.pytest_cache/

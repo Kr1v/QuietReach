@@ -1,0 +1,39 @@
+
+# ── Audio capture & feature extraction ──────────────────────────────────────
+pyaudio==0.2.14
+librosa==0.10.2
+soundfile==0.12.1
+audioread==3.0.1
+numpy==1.26.4
+scipy==1.13.0
+
+# ── Machine learning ─────────────────────────────────────────────────────────
+scikit-learn==1.4.2
+joblib==1.4.2           # sklearn dependency — pin to avoid pickle compat issues
+
+# TensorFlow — OPTIONAL, comment out if using tflite-runtime instead
+tensorflow==2.16.1
+
+# ── Alerting ─────────────────────────────────────────────────────────────────
+twilio==9.3.2
+firebase-admin==6.5.0
+
+# ── Privacy & encryption ──────────────────────────────────────────────────────
+cryptography==42.0.8
+
+# ── Location ─────────────────────────────────────────────────────────────────
+geocoder==1.38.1
+requests==2.32.3        # geocoder dependency
+
+# ── Config ───────────────────────────────────────────────────────────────────
+python-dotenv==1.0.1
+
+# ── Terminal UI ───────────────────────────────────────────────────────────────
+rich==13.7.1
+
+# ── Phone sensor endpoint (optional — only needed for SENSOR_MODE=phone) ─────
+flask==3.0.3
+
+# ── Testing ───────────────────────────────────────────────────────────────────
+pytest==8.2.0
+pytest-timeout==2.3.1
